@@ -24,6 +24,10 @@ require_once( "$IP/extensions/GoogleCodePrettify/GoogleCodePrettify.php" );
 
 That's all.
 
+## syntaxhighlight tag
+
+Google Code Prettify automatically recognizes language of source code. But you can set it using *lang* attribute.
+
 ## Configuration
 
 ### Enable handling of **source** tag.
@@ -36,7 +40,7 @@ You can override this behavior by setting global <tt>$wgGoogleCodePrettifyAllowS
 
 By default GoogleCodePrettify enables core languages plus css, sql and yaml.
 
-You can add or remove supported languages by changing of global <tt>$wgGoogleCodePrettifyAdditionalLanguages</tt> variable (array).
+You can add or remove supported languages by changing of global <tt>$wgGoogleCodePrettifyAdditionalLanguages</tt> array variable.
 
 ## License
 
