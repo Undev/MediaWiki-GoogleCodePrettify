@@ -7,7 +7,7 @@ class GoogleCodePrettify {
     $code_attributes = '';
     if (isset($args['lang']) && $args['lang']) {
       $lang = $args['lang'];
-      $code_attributes += " class=\"language-$lang\"";
+      $code_attributes .= " class=\"language-$lang\"";
     }
     self::$prettified = true;
 
