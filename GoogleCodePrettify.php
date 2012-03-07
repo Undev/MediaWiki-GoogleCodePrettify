@@ -42,6 +42,9 @@ function efGoogleCodePrettify_Setup( &$parser ) {
   if ($wgGoogleCodePrettifyAllowSourceTag) {
     $parser->setHook('source', array('GoogleCodePrettify', 'parserHook'));
   }
+  if ($wgGoogleCodePrettifyAllowShortAlias) {
+	$parser->setHook('shl', array('GoogleCodePrettify', 'parserHook'));
+  }
   $parser->setHook('syntaxhighlight', array('GoogleCodePrettify', 'parserHook'));
   return true;
 }
