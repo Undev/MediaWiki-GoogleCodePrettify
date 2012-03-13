@@ -42,7 +42,6 @@ Handling of **shl** tag disabled by default.
 
 You can override this behavior by setting global <tt>$wgGoogleCodePrettifyAllowShlTag</tt> variable to <tt>true</tt>.
 
-
 ### Additional languages
 
 By default GoogleCodePrettify enables core languages plus css, sql and yaml.
