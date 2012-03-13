@@ -2,12 +2,15 @@
 
 class GoogleCodePrettify {
   private static $prettified = false;
-  
+
   public static function parserHook($text, $args = array(), $parser) {
     $pre_classes = '';
     if (isset($args['lang']) && $args['lang']) {
       $lang = $args['lang'];
       $pre_classes .= " lang-$lang";
+    }
+    if (isset($args['class']) && $args['class']) {
+      $pre_classes .= ' '. $args['class'];
     }
     self::$prettified = true;
 

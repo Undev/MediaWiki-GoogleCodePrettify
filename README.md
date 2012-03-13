@@ -28,6 +28,10 @@ That's all.
 
 Google Code Prettify automatically recognizes language of source code. But you can set it using *lang* attribute.
 
+## class attribute
+
+You can add additional CSS class names to generated **pre** tags using *class* attribute. This is useful, for example, to add *mw-collapsible* class.
+
 ## Configuration
 
 ### Enable handling of **source** tag.
