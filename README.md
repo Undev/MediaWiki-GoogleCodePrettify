@@ -36,6 +36,13 @@ Handling of **source** tag disabled by default and is not recommended.
 
 You can override this behavior by setting global <tt>$wgGoogleCodePrettifyAllowSourceTag</tt> variable to <tt>true</tt>.
 
+### Enable handling of **shl** tag.
+
+Handling of **shl** tag disabled by default.
+
+You can override this behavior by setting global <tt>$wgGoogleCodePrettifyAllowShlTag</tt> variable to <tt>true</tt>.
+
+
 ### Additional languages
 
 By default GoogleCodePrettify enables core languages plus css, sql and yaml.

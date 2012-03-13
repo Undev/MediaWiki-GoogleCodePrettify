@@ -39,11 +39,11 @@ function efGoogleCodePrettify_Scripts() {
  */
 function efGoogleCodePrettify_Setup( &$parser ) {
   global $wgGoogleCodePrettifyAllowSourceTag;
-  global $wgGoogleCodePrettifyAllowShortAlias;
+  global $wgGoogleCodePrettifyAllowShlTag;
   if ($wgGoogleCodePrettifyAllowSourceTag) {
     $parser->setHook('source', array('GoogleCodePrettify', 'parserHook'));
   }
-  if ($wgGoogleCodePrettifyAllowShortAlias) {
+  if ($wgGoogleCodePrettifyAllowShlTag) {
     $parser->setHook('shl', array('GoogleCodePrettify', 'parserHook'));
   }
   $parser->setHook('syntaxhighlight', array('GoogleCodePrettify', 'parserHook'));
