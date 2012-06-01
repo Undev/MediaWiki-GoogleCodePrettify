@@ -1,8 +1,6 @@
 <?php
 
 class GoogleCodePrettify {
-  private static $prettified = false;
-
   public static function parserHook($text, $args = array(), $parser) {
     $pre_classes = '';
     if (isset($args['lang']) && $args['lang']) {
@@ -18,10 +16,7 @@ class GoogleCodePrettify {
   }
 
   public static function beforePageDisplay(&$wgOut, &$sk) {
-    if (self::$prettified) {
-      $wgOut->addModules('ext.GoogleCodePrettify');
-    }
-
+    $wgOut->addModules('ext.GoogleCodePrettify');
     // Continue
     return true;
   }
