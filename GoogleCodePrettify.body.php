@@ -1,6 +1,9 @@
 <?php
 
 class GoogleCodePrettify {
+
+  public static $prettified = false;
+
   public static function parserHook($text, $args = array(), $parser) {
     $pre_classes = '';
     if (isset($args['lang']) && $args['lang']) {
@@ -10,6 +13,12 @@ class GoogleCodePrettify {
     if (isset($args['class']) && $args['class']) {
       $pre_classes .= ' '. $args['class'];
     }
+
+    # Replace all < and > with their HTML entitites
+    #
+    $text = str_replace('<', '&lt;', $text);
+    $text = str_replace('>', '&gt;', $text);
+
     self::$prettified = true;
 
     return "<pre class=\"prettyprint$pre_classes\">$text</pre>";
