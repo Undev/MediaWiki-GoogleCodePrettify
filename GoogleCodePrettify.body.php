@@ -1,6 +1,9 @@
 <?php
 
 class GoogleCodePrettify {
+  
+  public static $prettified = false;
+  
   public static function parserHook($text, $args = array(), $parser) {
     $pre_classes = '';
     if (isset($args['lang']) && $args['lang']) {
