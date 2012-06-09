@@ -55,7 +55,7 @@ $wgExtensionCredits['other'][] = array(
   'name' => 'GoogleCodePrettify',
   'author' => 'Akzhan Abdulin',
   'url' => 'http://www.mediawiki.org/wiki/Extension:GoogleCodePrettify',
-  'version' => '0.3',
+  'version' => '0.4',
   'descriptionmsg' => 'google-code-prettify-description'
 );
 
