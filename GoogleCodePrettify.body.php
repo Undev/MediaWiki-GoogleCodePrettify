@@ -14,8 +14,10 @@ class GoogleCodePrettify {
       $pre_classes .= ' '. $args['class'];
     }
 
-    # Replace all < and > with their HTML entitites
+    # Replace all '&', '<,' and '>' with their HTML entitites. Order is
+    # important. You have to do '&' first.
     #
+    $text = str_replace('&', '&amp;', $text);
     $text = str_replace('<', '&lt;', $text);
     $text = str_replace('>', '&gt;', $text);
 
